@@ -1,0 +1,281 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.navbar-home {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 58px;
+}
+
+.navbar-element {
+  min-height: 58px;
+}
+
+.nav-link {
+  transition: all ease-in-out 0.2s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid white;
+}
+
+.home-image {
+  background-image: url('./../images/worldMap.svg');
+  background-size: cover;
+  background-position: top;
+  height: 85vh;
+}
+
+.bgimage {
+  background: url('./../images/coursesImage.svg');
+  background-size: cover;
+  height: 390px;
+}
+
+.prof-image {
+  background: url('./../images/profImage.png') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+}
+
+.course-background {
+  background-color: #2f6690;
+}
+
+.card-home {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  min-height: 300px;
+  color: #2f6690;
+}
+
+.enrollees-list,
+.card-enrolled-course {
+  border-bottom: 1px solid #2f6690;
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-top-list {
+  border-bottom: 1px solid #2f6690;
+}
+
+.card-enroll,
+.course-select {
+  transition: transform 0.2s;
+}
+
+.course-select:hover {
+  transform: scale(1.04);
+  box-shadow: 1px 8px 20px rgba(128, 128, 128, 0.475);
+}
+
+#user-name {
+  font-weight: bold;
+}
+
+.enrollees-heading,
+.courses-enrolled {
+  font-weight: bold;
+}
+
+.edit-profile,
+.profile-element,
+.card-enroll,
+.card-enroll-admin,
+.card-body-element,
+.not-registered,
+.login-element,
+.register-element,
+.edit-prof-element,
+.create-course-element,
+.edit-course-element {
+  color: #2f6690;
+}
+
+.card-enroll:hover {
+  transform: scale(1.04);
+  color: white;
+  border-radius: 3px;
+  background-image: linear-gradient(to right bottom, #2f6690e3, #2f6690);
+}
+
+.book-now-button:hover,
+.book-now-button:focus,
+.book-now-button:active:focus,
+.select-button:hover,
+.select-button:focus,
+.select-button:active:focus,
+.edit-button:hover,
+.edit-button:focus,
+.edit-button:active:focus,
+.enroll-button:hover,
+.enroll-button:focus,
+.enroll-button:active:focus,
+.add-course-button:hover,
+.add-course-button:focus,
+.add-course-button:active:focus {
+  background-color: #4a92bf !important;
+  border-color: #4a92bf !important;
+}
+
+.edit-profile:hover {
+  color: #4a92bf;
+}
+
+.card-login {
+  display: flex;
+  align-items: center;
+  background-image: url('./../images/background.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.card-login-container {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: end;
+}
+
+.text-box {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+  letter-spacing: 0.2em;
+}
+
+.courses-heading {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+}
+
+.card-title,
+.course-name-text {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.1em;
+}
+
+.sublead {
+  font-weight: bold;
+  color: white;
+}
+
+.book-button {
+  background-color: #3a7ca5;
+  border-color: #3a7ca5;
+}
+
+.select-button,
+.edit-button,
+.enroll-button,
+.add-course-button {
+  border-color: #3a7ca5;
+}
+
+.footer-element,
+.navbar-element,
+.select-button,
+.edit-button,
+.enroll-button,
+.add-course-button {
+  background-color: #3a7ca5;
+}
+
+.go-to-button {
+  background-color: #2f6690;
+}
+
+.go-to-button:hover,
+.go-to-button:focus,
+.go-to-button:active:focus {
+  background-color: #397db1;
+  border-color: #397db1;
+}
+
+.delete-button {
+  background-color: #d7263d;
+}
+
+.delete-button {
+  border-color: #d7263d;
+}
+
+.delete-button:hover,
+.delete-button:focus,
+.delete-button:active:focus {
+  background-color: #db364c;
+  border-color: #db364c;
+}
+
+.activate-button {
+  background-color: #f46036;
+}
+.activate-button {
+  border-color: #f46036;
+}
+
+.activate-button:hover,
+.activate-button:focus,
+.activate-button:active:focus {
+  background-color: #f67451 !important;
+  border-color: #f67451 !important;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    background-color: #3a7ca5;
+  }
+  .nav-link:hover {
+    border-bottom: none;
+  }
+  .heading,
+  .courses-heading {
+    font-size: 45px;
+    font-weight: 200;
+  }
+  .navbar-home {
+    position: inherit;
+  }
+
+  .card-home {
+    min-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .courses-heading {
+    font-size: 40px;
+  }
+
+  .card-home {
+    min-height: 150px;
+  }
+
+  * {
+    font-size: 0.85rem;
+  }
+}
